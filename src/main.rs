@@ -57,7 +57,7 @@ fn main() {
     if args.colorize {
         print_colorized(&password, &args.delimiter);
     } else {
-        println!("\n{}", password.join(&args.delimiter));
+        println!("{}", password.join(&args.delimiter));
     }
     if args.extra_info { 
         let pool_size = char_pool.len() as f64;
